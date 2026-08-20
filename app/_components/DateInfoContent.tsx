@@ -60,9 +60,7 @@ function InfoCard<T extends string>({
         <table className="min-w-full text-sm">
           <thead>
             <tr className="border-b border-zinc-200 text-left text-xs text-zinc-500 dark:border-zinc-800 dark:text-zinc-400">
-              {showDate && (
-                <th className="pb-3 pr-3 font-medium">날짜</th>
-              )}
+              {showDate && <th className="pb-3 pr-3 font-medium">날짜</th>}
               <th className="pb-3 pr-3 font-medium">카테고리</th>
               <th className="pb-3 pr-3 font-medium">금액</th>
               <th className="pb-3 font-medium">비고</th>
@@ -140,7 +138,7 @@ export default function DateInfoContent({
 
         <div className="mt-8">
           <Link
-            href="/calendar"
+            href="/"
             className="text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50"
           >
             ← 캘린더로 돌아가기
